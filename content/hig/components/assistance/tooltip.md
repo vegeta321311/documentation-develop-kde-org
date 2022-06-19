@@ -65,7 +65,8 @@ Code
 
 ### Kirigami
 
-- Kirigami: [ApplicationWindow](docs:kirigami2;ApplicationWindow), [Contextual Help Button](https://api.kde.org/frameworks/kdeclarative/html/classorg_1_1kde_1_1kcm_1_1ContextualHelpButton.html)
+- Kirigami: [ApplicationWindow](docs:kirigami2;ApplicationWindow)
+- KXM: [Contextual Help Button](https://api.kde.org/frameworks/kdeclarative/html/classorg_1_1kde_1_1kcm_1_1ContextualHelpButton.html)
 - QML: [MenuBar](https://doc.qt.io/qt-5/qml-qtquick-controls-menubar.html)
 
 ### Qt Widgets
