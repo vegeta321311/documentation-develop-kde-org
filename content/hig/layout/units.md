@@ -63,20 +63,6 @@ use DPI independent pixels/px.
 
 {{< /alert >}}
 
-### DPI Independent Pixels in KDE
-
-As a developer, if you want to use DPI independent pixels in Plasma use
-`units.devicePixelRatio` or `Units.devicePixelRatio` in Kirigami.
-
-{{< alert color="warning" title="Caution" >}} 
-
-The use of devicePixelRatio should be avoided, but if you must, check
-the [documentation](http://doc.qt.io/qt-5/highdpi.html) and ask for more
-information in [Plasma](https://telegram.me/vdgmainroom) or
-[Kirigami](https://telegram.me/joinchat/BbOuVj6l7b5aZ_WbupyFFw) channel.
-
-{{< /alert >}}
-
 ### Fonts
 
 Since Plasma allows the user to change the font settings, any objects
