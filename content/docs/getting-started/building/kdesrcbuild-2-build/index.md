@@ -3,7 +3,7 @@ title: "Building KDE software with kdesrc-build"
 description: "TODO"
 weight: 11
 group: "kdesrc-build"
-url: kdesrc-build
+url: docs/getting-started/building/kdesrc-build
 ---
 
 On this page, you will learn how to use KDE's `kdesrc-build` tool to build various types of KDE software once you have a development environment set up.
@@ -15,7 +15,7 @@ If you don't want to build all dependencies (for instance if you are using a rol
 * edit the configuration file `~/.config/kdesrc-buildrc` and simply set `include-dependencies false`
 * or add the `--no-include-dependencies` option when running `kdesrc-build`
 
-## Frameworks ##
+## Frameworks
 
 [KDE Frameworks](https://community.kde.org/Frameworks) are libraries of tools and features that can be used by any application or Plasma itself. New versions of KDE Frameworks are [released once a month](https://community.kde.org/Schedules). A list of all of the frameworks can be found here: https://api.kde.org/frameworks.
 
@@ -23,7 +23,7 @@ There is no reason to build any of the frameworks manually unless you are workin
 
 When you tell kdesrc-build to build a module, kdesrc-build will automatically git clone, configure, build and install the KDE Frameworks that are required by that module.
 
-## Applications ##
+## Applications
 
 [KDE Applications](https://apps.kde.org/) like [KCalc](https://apps.kde.org/kcalc ), [Dolphin](https://apps.kde.org/dolphin/), [Okular](https://apps.kde.org/okular/), [Konsole](https://apps.kde.org/konsole/) and [Gwenview](https://apps.kde.org/gwenview/) are standalone apps that can be run on multiple platforms, such as Plasma, GNOME, even macOS and Windows! New versions of KDE Applications are [released three times a year](https://community.kde.org/Schedules#Current_Releases_by_KDE).
 
@@ -45,13 +45,13 @@ kdesrc-build --run kcalc
 
 Did it run? If so, then **congratulations, you just compiled your own version of KCalc from source code!**
 
-## Plasma ##
+## Plasma
 
 [KDE Plasma](https://community.kde.org/Plasma) is the environment in which you can run apps. Plasma is responsible for providing a desktop with wallpaper, app launchers, and widgets; displaying notifications; managing wired and wireless networks; and similar operating-system level tasks.
 
 New versions of Plasma are [released three times a year](https://community.kde.org/Schedules). Plasma has multiple *shells*: [Plasma Desktop](https://kde.org/plasma-desktop) for desktop, laptop, and 2-in-1 computers, [Plasma Mobile](https://www.plasma-mobile.org/) for mobile phones, [Plasma Bigscreen](https://plasma-bigscreen.org/) for televisions, and so on. They all share certain common components, such as a window manager, networking stack, basic graphical components, and so on. These shared components are found in [Plasma Workspace](https://invent.kde.org/plasma/plasma-workspace).
 
-### Plasma Desktop ###
+### Plasma Desktop
 
 To build the Plasma Desktop environment and its related apps, run the following command:
 
@@ -82,7 +82,7 @@ source ~/kde/build/plasma-desktop/prefix.sh
 
 Take note of [known issues with built-from-source dev sessions](https://community.kde.org/Plasma/Plasma_6#Known_issues).
 
-### Plasma Mobile ###
+### Plasma Mobile
 
 To build the Plasma Mobile environment, run the following command:
 
@@ -158,7 +158,7 @@ By default, kdesrc-build will always attempt to go back to the `master` branch b
 kdesrc-build --no-src kcalc
 ```
 
-### Rebuild only a single project without updating the source code:
+### Rebuild only a single project without updating the source code
 
 As mentioned above, there are times when you want to rebuild the project in the current branch.
 
@@ -168,7 +168,7 @@ By default, kdesrc-build will rebuild a project and all its dependencies. To avo
 kdesrc-build --no-include-dependencies --no-src kcalc
 ```
 
-### Build a specific project while skipping certain modules:
+### Build a specific project while skipping certain modules
 
 Sometimes a particular program somewhere down the dependency chain fails to build and isn't strictly required for a certain project to compile properly, or sometimes you want to use the program installed from your distribution.
 
@@ -178,7 +178,7 @@ In that case, you can avoid building a project by using the `--ignore-modules` f
 kdesrc-build kcalc --ignore-modules gpgme
 ```
 
-## Next Steps ##
+## Next Steps
 
 Now you can compile anything in KDE from its source code! Time to think about what to do with this superpower...
 
