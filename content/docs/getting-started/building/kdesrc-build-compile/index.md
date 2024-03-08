@@ -3,7 +3,6 @@ title: "Building KDE software with kdesrc-build"
 description: "TODO"
 weight: 11
 group: "kdesrc-build"
-url: docs/getting-started/building/kdesrc-build
 ---
 
 On this page, you will learn how to use KDE's `kdesrc-build` tool to build various types of KDE software once you have a development environment set up.

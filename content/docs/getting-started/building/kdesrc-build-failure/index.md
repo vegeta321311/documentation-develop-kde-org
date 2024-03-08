@@ -3,7 +3,6 @@ title: "Basic troubleshooting"
 description: "What to do in case of build issues"
 weight: 13
 group: "kdesrc-build"
-url: docs/getting-started/kdesrc-build-failure
 ---
 
 Did one or more modules fail to build (displayed in red font) using `kdesrc-build`? Then here's what to do:
@@ -14,7 +13,7 @@ Did one or more modules fail to build (displayed in red font) using `kdesrc-buil
 
 * Look at the KDE project's https://invent.kde.org GitLab project. If the project has a GitLab build pipeline and if the pipeline is broken, then it's not your fault.
 
-* Ask for help in the the [#kde-devel](https://webchat.kde.org/#/room/#kde-devel:kde.org) channel on [Matrix](https://community.kde.org/Matrix) or [Libera Chat IRC](https://community.kde.org/Internet_Relay_Chat). See [Where to find the development team]({{< ref "developers" >}}).
+* Ask for help in the the [#kde-devel](https://webchat.kde.org/#/room/#kde-devel:kde.org) channel on [Matrix](https://community.kde.org/Matrix) or [Libera Chat IRC](https://community.kde.org/Internet_Relay_Chat). See [Where to find the development team]({{< ref "help-developers" >}}).
 
 * Looking into the error log is also helpful. For example, the build stopped at KWallet. You will need to go into `~/kde/src/log/latest/kwallet/error.log` and find what packages are missing.
 

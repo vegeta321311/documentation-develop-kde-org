@@ -3,7 +3,6 @@ title: "Tips and tricks"
 description: "TODO"
 weight: 14
 group: "kdesrc-build"
-url: docs/getting-started/building/kdesrc-build-tips
 ---
 
 ## Viewing colored build logs

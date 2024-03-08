@@ -3,7 +3,6 @@ title: "Set up a development environment"
 description: "Installing and configuring kdesrc-build"
 weight: 10
 group: "kdesrc-build"
-url: docs/getting-started/building/kdesrc-build-setup
 ---
 
 Source code for KDE software lives on [KDE Invent](https://invent.kde.org). But before you can work on it, you'll need to set up a **development environment**: a set of tools that allows you to access and edit the source code, compile it into a form that the computer can run, and deploy it to a safe location. We will now go through the process of setting one up. To accomplish these tasks, you will need to enter commands using a terminal program, such as KDE's [Konsole](https://apps.kde.org/konsole).
