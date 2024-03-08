@@ -178,6 +178,21 @@ In that case, you can avoid building a project by using the `--ignore-modules` f
 kdesrc-build kcalc --ignore-modules gpgme
 ```
 
+## Running an application after making changes to one of its dependencies
+
+Let's say you want to make a change to KConfig that should change a behavior in KCalc. In this case, you don't want kdesrc-build to discard your changes to KConfig. So first build KConfig separately, on its own, without doing a source code update:
+
+```bash
+kdesrc-build kconfig --no-src --no-include-dependencies --refresh-build --debug
+```
+
+This will build just KConfig and install the needed build products into `~/kde/usr`. Now we want to run KCalc in such a way that it makes use of those changed files. Do it like so:
+
+```bash
+kdesrc-build kcalc --no-src --no-include-dependencies --refresh-build --debug
+kdesrc-run kcalc
+```
+
 ## Next Steps
 
 Now you can compile anything in KDE from its source code! Time to think about what to do with this superpower...
