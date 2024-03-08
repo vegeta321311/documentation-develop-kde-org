@@ -3,7 +3,7 @@ title: "Where to find the development team"
 description: "Contacting the development team is the first step to being a part of the community."
 weight: 1
 group: "help"
-url: developers
+url: docs/getting-started/building/developers
 ---
 
 The KDE developers are here to assist you if you need any help following this guide.

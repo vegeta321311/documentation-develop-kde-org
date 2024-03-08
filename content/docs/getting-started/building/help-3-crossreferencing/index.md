@@ -3,7 +3,7 @@ title: "Source code cross-referencing"
 description: "How to search for examples in existing KDE software"
 weight: 3
 group: "help"
-url: crossreferencing
+url: docs/getting-started/building/crossreferencing
 ---
 
 To search for a class, method, signal name or any other sort of code in all KDE repos, including QML and CMake, KDE provides a code referencing tool to index code in the various KDE repositories: the [KDE Source Code Cross Reference (LXR)](https://lxr.kde.org/) website.
