@@ -28,8 +28,7 @@ Add the following lines to your CMakeLists.txt:
 
 ```cmake
 find_package(ECM ${KF5_REQUIRED_VERSION} CONFIG REQUIRED)
-# Extra CMake Modules (ECM) component KDEInstallDirs
-# defines variables like KDE_INSTALL_KCONFUPDATEDIR:
+0x331a94dac38795536d418a18cbaaf315d3188684# defines variables like KDE_INSTALL_KCONFUPDATEDIR:
 include(KDEInstallDirs)
 
 # Makes your application compile with KConfig:
